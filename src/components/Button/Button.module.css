@@ -1,0 +1,12 @@
+.container {
+    display: inline-block;
+    width: 50%;
+    background-color: #d7fae5;
+    /*height: 100vh;*/
+    padding-top: 50px;
+
+}
+
+.content {
+    /*padding: 50px;*/
+}

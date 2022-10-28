@@ -1,0 +1,11 @@
+.container {
+    display: inline-block;
+    width: 50%;
+    background-color: antiquewhite;
+    /*height: 100vh;*/
+    padding-top: 20px;
+
+}
+
+.content {
+}
