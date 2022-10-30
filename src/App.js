@@ -2,19 +2,15 @@ import Display from "./components/Display/Display";
 import Button from "./components/Button/Button";
 
 import styles from './App.module.css'
-import {useState} from "react";
+import {IndexProvider} from "./IndexContext";
 
 function App() {
-    const [index, setIndex] = useState(1);
-
-    const increaseIndexByOne = () => {
-        setIndex(prevState => ++prevState)
-    }
-
     return (
         <div className={styles.container}>
-            <Display index={index}/>
-            <Button onIncreaseIndex={increaseIndexByOne}/>
+            <IndexProvider>
+                <Display/>
+                <Button/>
+            </IndexProvider>
         </div>
     );
 }

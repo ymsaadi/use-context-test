@@ -1,9 +1,8 @@
 import styles from './Button.module.css'
+import {useIndexUpdate} from "../../IndexContext";
 
-const Button = (props) => {
-    const addOneHandler = () => {
-        props.onIncreaseIndex()
-    }
+const Button = () => {
+    const addOneHandler = useIndexUpdate()
 
     return (
         <div className={styles.container}>
