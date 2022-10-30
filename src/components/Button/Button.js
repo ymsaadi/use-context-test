@@ -1,10 +1,14 @@
 import styles from './Button.module.css'
 
-const Button = () => {
+const Button = (props) => {
+    const addOneHandler = () => {
+        props.onIncreaseIndex()
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.content}>
-                <button>Increaso Petronum</button>
+                <button onClick={addOneHandler}>Increaso Petronum</button>
             </div>
         </div>
     )

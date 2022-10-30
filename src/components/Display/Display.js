@@ -1,10 +1,10 @@
 import styles from './Display.module.css'
 
-const Display = () => {
+const Display = (props) => {
     return (
         <div className={styles.container}>
             <div className={styles.content}>
-                I'm the display component #1
+                I'm the display component #{props.index}
             </div>
         </div>
     )
