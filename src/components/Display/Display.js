@@ -4,7 +4,7 @@ const Display = () => {
     return (
         <div className={styles.container}>
             <div className={styles.content}>
-                I'm the display component
+                I'm the display component #1
             </div>
         </div>
     )

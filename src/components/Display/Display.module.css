@@ -1,11 +1,11 @@
 .container {
-    display: inline-block;
     width: 50%;
     background-color: antiquewhite;
-    /*height: 100vh;*/
-    padding-top: 20px;
-
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
 }
 
 .content {
+    margin-top: 25%;
 }
